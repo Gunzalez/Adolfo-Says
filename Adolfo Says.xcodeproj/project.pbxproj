@@ -14,6 +14,7 @@
 		6F76E4211B3213D600EC6E6C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F76E41F1B3213D600EC6E6C /* LaunchScreen.xib */; };
 		6F76E42D1B3213D600EC6E6C /* Adolfo_SaysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F76E42C1B3213D600EC6E6C /* Adolfo_SaysTests.swift */; };
 		6F76E4371B32198900EC6E6C /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F76E4361B32198900EC6E6C /* MyButton.swift */; };
+		6F76E43D1B32260B00EC6E6C /* ListMeansTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F76E43C1B32260B00EC6E6C /* ListMeansTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		6F76E42B1B3213D600EC6E6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F76E42C1B3213D600EC6E6C /* Adolfo_SaysTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adolfo_SaysTests.swift; sourceTree = "<group>"; };
 		6F76E4361B32198900EC6E6C /* MyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
+		6F76E43C1B32260B00EC6E6C /* ListMeansTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMeansTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		6F76E4131B3213D600EC6E6C /* Adolfo Says */ = {
 			isa = PBXGroup;
 			children = (
+				6F76E43C1B32260B00EC6E6C /* ListMeansTableViewController.swift */,
 				6F76E4161B3213D600EC6E6C /* AppDelegate.swift */,
 				6F76E4181B3213D600EC6E6C /* ViewController.swift */,
 				6F76E41A1B3213D600EC6E6C /* Main.storyboard */,
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F76E43D1B32260B00EC6E6C /* ListMeansTableViewController.swift in Sources */,
 				6F76E4191B3213D600EC6E6C /* ViewController.swift in Sources */,
 				6F76E4171B3213D600EC6E6C /* AppDelegate.swift in Sources */,
 				6F76E4371B32198900EC6E6C /* MyButton.swift in Sources */,
