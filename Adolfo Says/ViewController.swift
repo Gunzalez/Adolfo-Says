@@ -8,6 +8,8 @@
 
 import UIKit
 
+var adolfoMeans = [String]()
+
 class ViewController: UIViewController {
     
     var card: String!
@@ -15,10 +17,23 @@ class ViewController: UIViewController {
     @IBAction func cardPressed(sender: AnyObject) {
         
         var button = sender as! UIButton
+        
         card = button.titleLabel?.text;
         
         performSegueWithIdentifier("showCard", sender: sender)
         
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if (segue.identifier == "showCard") {
+            
+            var navController = segue.destinationViewController as! UINavigationController
+            
+            var viewController = navController.topViewController as! CardViewController
+            
+            viewController.card = card
+        }
     }
     
     override func viewDidLoad() {
@@ -32,18 +47,6 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-        if (segue.identifier == "showCard") {
-            
-            let navController = segue.destinationViewController as! UINavigationController
-            
-            let viewController = navController.topViewController as! CardViewController
-            
-            viewController.card = card
-        }
-    }
-
 
 }
 

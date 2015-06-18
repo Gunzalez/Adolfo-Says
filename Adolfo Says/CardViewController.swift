@@ -13,6 +13,9 @@ class CardViewController: UIViewController {
     @IBOutlet var cardLabel: UILabel!
     
 
+    @IBAction func donePressed(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: {});
+    }
     
     var card :String!
     
