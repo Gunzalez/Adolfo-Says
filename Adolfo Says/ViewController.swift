@@ -9,8 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var card: String!
 
-    @IBOutlet var button: UIButton!
+    @IBAction func cardPressed(sender: AnyObject) {
+        
+        var button = sender as! UIButton
+        card = button.titleLabel?.text;
+        
+        performSegueWithIdentifier("showCard", sender: sender)
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +30,18 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if (segue.identifier == "showCard") {
+            
+            let navController = segue.destinationViewController as! UINavigationController
+            
+            let viewController = navController.topViewController as! CardViewController
+            
+            viewController.card = card
+        }
     }
 
 

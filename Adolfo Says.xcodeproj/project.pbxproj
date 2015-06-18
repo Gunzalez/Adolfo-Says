@@ -16,6 +16,7 @@
 		6F76E4371B32198900EC6E6C /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F76E4361B32198900EC6E6C /* MyButton.swift */; };
 		6F76E43D1B32260B00EC6E6C /* ListMeansTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F76E43C1B32260B00EC6E6C /* ListMeansTableViewController.swift */; };
 		6F76E43F1B322BA200EC6E6C /* AddMeansTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F76E43E1B322BA200EC6E6C /* AddMeansTableViewController.swift */; };
+		6F76E4411B3372FF00EC6E6C /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F76E4401B3372FF00EC6E6C /* CardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		6F76E4361B32198900EC6E6C /* MyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
 		6F76E43C1B32260B00EC6E6C /* ListMeansTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMeansTableViewController.swift; sourceTree = "<group>"; };
 		6F76E43E1B322BA200EC6E6C /* AddMeansTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMeansTableViewController.swift; sourceTree = "<group>"; };
+		6F76E4401B3372FF00EC6E6C /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				6F76E4161B3213D600EC6E6C /* AppDelegate.swift */,
 				6F76E4181B3213D600EC6E6C /* ViewController.swift */,
 				6F76E41A1B3213D600EC6E6C /* Main.storyboard */,
+				6F76E4401B3372FF00EC6E6C /* CardViewController.swift */,
 				6F76E4361B32198900EC6E6C /* MyButton.swift */,
 				6F76E41D1B3213D600EC6E6C /* Images.xcassets */,
 				6F76E41F1B3213D600EC6E6C /* LaunchScreen.xib */,
@@ -223,6 +226,7 @@
 			files = (
 				6F76E43D1B32260B00EC6E6C /* ListMeansTableViewController.swift in Sources */,
 				6F76E4191B3213D600EC6E6C /* ViewController.swift in Sources */,
+				6F76E4411B3372FF00EC6E6C /* CardViewController.swift in Sources */,
 				6F76E43F1B322BA200EC6E6C /* AddMeansTableViewController.swift in Sources */,
 				6F76E4171B3213D600EC6E6C /* AppDelegate.swift in Sources */,
 				6F76E4371B32198900EC6E6C /* MyButton.swift in Sources */,

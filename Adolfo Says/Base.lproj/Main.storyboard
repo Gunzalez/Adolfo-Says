@@ -22,6 +22,9 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <color key="tintColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                                 <state key="normal" title="0"/>
+                                <connections>
+                                    <action selector="cardPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vOu-ze-1KQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5Y-F3-q7g" customClass="MyCustomButton" customModule="Adolfo_Says" customModuleProvider="target">
                                 <rect key="frame" x="28" y="191" width="69" height="97"/>
@@ -29,6 +32,9 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <color key="tintColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                                 <state key="normal" title="5"/>
+                                <connections>
+                                    <action selector="cardPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SgB-uC-XxQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnM-Cm-QEi" customClass="MyCustomButton" customModule="Adolfo_Says" customModuleProvider="target">
                                 <rect key="frame" x="28" y="296" width="69" height="97"/>
@@ -36,6 +42,9 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <color key="tintColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                                 <state key="normal" title="34"/>
+                                <connections>
+                                    <action selector="cardPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BdI-Az-XOP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Gk-XX-FNy" customClass="MyCustomButton" customModule="Adolfo_Says" customModuleProvider="target">
                                 <rect key="frame" x="28" y="401" width="69" height="97"/>
@@ -43,6 +52,9 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <color key="tintColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                                 <state key="normal" title="?"/>
+                                <connections>
+                                    <action selector="cardPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NKC-D5-84n"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duh-7Y-KZl" customClass="MyCustomButton" customModule="Adolfo_Says" customModuleProvider="target">
                                 <rect key="frame" x="112" y="86" width="69" height="97"/>
@@ -50,6 +62,9 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <color key="tintColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                                 <state key="normal" title="1"/>
+                                <connections>
+                                    <action selector="cardPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ptl-2j-80u"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXs-wK-cYu" customClass="MyCustomButton" customModule="Adolfo_Says" customModuleProvider="target">
                                 <rect key="frame" x="195" y="86" width="69" height="97"/>
@@ -57,6 +72,9 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <color key="tintColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                                 <state key="normal" title="2"/>
+                                <connections>
+                                    <action selector="cardPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Nf8-kf-Omr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wI7-Uv-lSY" customClass="MyCustomButton" customModule="Adolfo_Says" customModuleProvider="target">
                                 <rect key="frame" x="278" y="86" width="69" height="97"/>
@@ -64,6 +82,9 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <color key="tintColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                                 <state key="normal" title="3"/>
+                                <connections>
+                                    <action selector="cardPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cdn-Jc-16d"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vgg-c7-iEC" customClass="MyCustomButton" customModule="Adolfo_Says" customModuleProvider="target">
                                 <rect key="frame" x="112" y="191" width="69" height="97"/>
@@ -71,6 +92,9 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <color key="tintColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                                 <state key="normal" title="8"/>
+                                <connections>
+                                    <action selector="cardPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sZi-Nu-lpg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wg9-KZ-3nv" customClass="MyCustomButton" customModule="Adolfo_Says" customModuleProvider="target">
                                 <rect key="frame" x="195" y="191" width="69" height="97"/>
@@ -78,6 +102,9 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <color key="tintColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                                 <state key="normal" title="13"/>
+                                <connections>
+                                    <action selector="cardPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mFb-Qg-qRW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYI-ZM-Hxg" customClass="MyCustomButton" customModule="Adolfo_Says" customModuleProvider="target">
                                 <rect key="frame" x="278" y="191" width="69" height="97"/>
@@ -85,6 +112,9 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <color key="tintColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                                 <state key="normal" title="21"/>
+                                <connections>
+                                    <action selector="cardPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SbM-0C-f0G"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPN-ul-Q55" customClass="MyCustomButton" customModule="Adolfo_Says" customModuleProvider="target">
                                 <rect key="frame" x="112" y="296" width="69" height="97"/>
@@ -92,6 +122,9 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <color key="tintColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                                 <state key="normal" title="55"/>
+                                <connections>
+                                    <action selector="cardPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="GeL-RO-NbS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aD8-TS-yXN" customClass="MyCustomButton" customModule="Adolfo_Says" customModuleProvider="target">
                                 <rect key="frame" x="195" y="296" width="69" height="97"/>
@@ -99,6 +132,9 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <color key="tintColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                                 <state key="normal" title="89"/>
+                                <connections>
+                                    <action selector="cardPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Mzo-2x-p6x"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLy-Sz-7Th" customClass="MyCustomButton" customModule="Adolfo_Says" customModuleProvider="target">
                                 <rect key="frame" x="278" y="296" width="69" height="97"/>
@@ -106,6 +142,9 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <color key="tintColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                                 <state key="normal" title="100"/>
+                                <connections>
+                                    <action selector="cardPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hM5-uq-G4D"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqi-7M-tCL" customClass="MyCustomButton" customModule="Adolfo_Says" customModuleProvider="target">
                                 <rect key="frame" x="112" y="401" width="69" height="97"/>
@@ -113,6 +152,9 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <color key="tintColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                                 <state key="normal" title="∞"/>
+                                <connections>
+                                    <action selector="cardPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uv5-cp-dWE"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -126,12 +168,69 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="button" destination="cVq-ex-cD1" id="sza-lG-JXE"/>
+                        <segue destination="VaD-dd-PbS" kind="presentation" identifier="showCard" modalTransitionStyle="flipHorizontal" id="hZy-FP-6QZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="823.5" y="387.5"/>
+        </scene>
+        <!--Adolfo says-->
+        <scene sceneID="lBp-ai-uww">
+            <objects>
+                <viewController id="bJo-xz-Dsm" customClass="CardViewController" customModule="Adolfo_Says" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4ZY-Qr-GMV"/>
+                        <viewControllerLayoutGuide type="bottom" id="dq8-xl-0eh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4yI-JL-6pe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ub7-UH-Xhq">
+                                <rect key="frame" x="50" y="65" width="274" height="149"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="74"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAW-OK-rH3">
+                                <rect key="frame" x="142" y="51" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What he really means is..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XkD-jF-9Re">
+                                <rect key="frame" x="96" y="242" width="196" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACY-eC-Cet">
+                                <rect key="frame" x="164" y="406" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I wish I was at home" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTt-Vy-7hp">
+                                <rect key="frame" x="50" y="297" width="157" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Adolfo says" id="Guo-rN-5as">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="T5x-xD-xIa"/>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="cardLabel" destination="Ub7-UH-Xhq" id="4Wj-P1-7SJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DWs-PU-NSS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1939.5" y="-392.5"/>
         </scene>
         <!--Adolfo means-->
         <scene sceneID="Qrc-ih-W5T">
@@ -246,6 +345,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WGk-kn-A9v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1352.5" y="387.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="avU-IF-aqc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VaD-dd-PbS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AH8-2Y-546">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bJo-xz-Dsm" kind="relationship" relationship="rootViewController" id="Tg8-GK-ucH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tjn-Fj-RQ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1352.5" y="-392.5"/>
         </scene>
     </scenes>
 </document>
