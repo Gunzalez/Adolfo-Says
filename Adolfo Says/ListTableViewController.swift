@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ListMeansTableViewController: UITableViewController {
+class ListTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -238,7 +238,7 @@
         <!--Adolfo means-->
         <scene sceneID="Qrc-ih-W5T">
             <objects>
-                <tableViewController title="Adolfo means" id="6s9-0m-bwj" customClass="ListMeansTableViewController" customModule="Adolfo_Says" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Adolfo means" id="6s9-0m-bwj" customClass="ListTableViewController" customModule="Adolfo_Says" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Es7-8g-QSa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -272,7 +272,7 @@
         <!--Add New Means-->
         <scene sceneID="7PU-mK-bF8">
             <objects>
-                <tableViewController title="Add New Means" id="ljx-0N-heh" customClass="AddMeansTableViewController" customModule="Adolfo_Says" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Add New Means" id="ljx-0N-heh" customClass="AddTableViewController" customModule="Adolfo_Says" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="cWV-qR-vcq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
