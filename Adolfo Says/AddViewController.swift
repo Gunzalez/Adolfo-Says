@@ -18,7 +18,7 @@ class AddViewController: UIViewController, UITextFieldDelegate {
     
     var maxChar: Int = 50
     
-    var meaningToEdit: String!
+    var meaningIndex: Int!
     
     override func viewDidLoad() {
         
@@ -30,13 +30,13 @@ class AddViewController: UIViewController, UITextFieldDelegate {
         
         charCountLabel.text = String(maxChar)
         
-        if meaningToEdit != nil {
+        if meaningIndex != nil {
         
-            textField.text = meaningToEdit
+            textField.text = adolfoMeans[meaningIndex]
             
-            previewLabel.text = meaningToEdit
+            previewLabel.text = adolfoMeans[meaningIndex]
             
-            charCountLabel.text = String(maxChar - count(meaningToEdit))
+            charCountLabel.text = String(maxChar - count(adolfoMeans[meaningIndex]))
             
         }
         
@@ -49,8 +49,6 @@ class AddViewController: UIViewController, UITextFieldDelegate {
         
         charCountLabel.text = String(maxChar - count(textField.text!))
         
-        //println( count(textField.text!))
-        
     }
     
     
@@ -62,11 +60,21 @@ class AddViewController: UIViewController, UITextFieldDelegate {
         
     }
     
+    
     func saveAndDismissView(){
         
         var newMeaning: String = textField.text
         
-        adolfoMeans.append(newMeaning)
+        if meaningIndex != nil {
+            
+            adolfoMeans[meaningIndex] = newMeaning
+            
+        } else {
+            
+            adolfoMeans.append(newMeaning)
+            
+        }
+        
     
         self.navigationController?.popViewControllerAnimated(true)
         

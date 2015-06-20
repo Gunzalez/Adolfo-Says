@@ -82,7 +82,7 @@ class ListTableViewController: UITableViewController {
             
             var selectedIndex = self.tableList.indexPathForCell(sender as! UITableViewCell)
             
-            viewController.meaningToEdit = adolfoMeans[selectedIndex!.row]
+            viewController.meaningIndex = selectedIndex!.row
             
             
 //            let backBtn = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
