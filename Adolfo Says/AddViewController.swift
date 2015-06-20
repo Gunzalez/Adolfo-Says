@@ -16,6 +16,8 @@ class AddViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var charCountLabel: UILabel!
     
+    var maxChar: Int = 50
+    
     var meaningToEdit: String!
     
     override func viewDidLoad() {
@@ -26,11 +28,37 @@ class AddViewController: UIViewController, UITextFieldDelegate {
         
         textField.becomeFirstResponder()
         
+        charCountLabel.text = String(maxChar)
+        
         if meaningToEdit != nil {
         
             textField.text = meaningToEdit
             
+            previewLabel.text = meaningToEdit
+            
+            charCountLabel.text = String(maxChar - count(meaningToEdit))
+            
         }
+        
+    }
+    
+    
+    @IBAction func keyboardPressed(sender: AnyObject) {
+        
+        previewLabel.text = textField.text
+        
+        charCountLabel.text = String(maxChar - count(textField.text!))
+        
+        //println( count(textField.text!))
+        
+    }
+    
+    
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        
+        let newLength = count(textField.text.utf16) + count(string.utf16) - range.length
+        
+        return newLength <= maxChar
         
     }
     
