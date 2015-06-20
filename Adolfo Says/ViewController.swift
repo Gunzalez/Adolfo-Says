@@ -37,16 +37,24 @@ class ViewController: UIViewController {
     }
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        if adolfoMeans.count < 1 {
+            
+            adolfoMeans.append("I would rather wathing True Detective")
+            adolfoMeans.append("Actually, I have no idea but I just said that so I don't look stupid")
+            adolfoMeans.append("What, what did you say? Aww, fuck it, why not!")
+            
+        }
         
     }
 
     override func didReceiveMemoryWarning() {
+        
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
     
-
 }
 

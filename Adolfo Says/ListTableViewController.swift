@@ -16,14 +16,6 @@ class ListTableViewController: UITableViewController {
         
         super.viewDidLoad()
         
-        if adolfoMeans.count < 1 {
-        
-            adolfoMeans.append("I would rather wathing True Detective")
-            adolfoMeans.append("Actually, I have no idea but I just said that so I don't look stupid")
-            adolfoMeans.append("What, what did you say? Aww, fuck it, why not!")
-            
-        }
-        
     }
 
     override func didReceiveMemoryWarning() {

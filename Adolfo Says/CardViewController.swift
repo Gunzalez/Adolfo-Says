@@ -9,40 +9,41 @@
 import UIKit
 
 class CardViewController: UIViewController {
+    
+    var card :String!
 
     @IBOutlet var cardLabel: UILabel!
     
+    @IBOutlet var meansLabel: UILabel!
+    
 
     @IBAction func donePressed(sender: AnyObject) {
+        
         self.dismissViewControllerAnimated(true, completion: {});
+        
     }
     
-    var card :String!
-    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
         modalTransitionStyle = .FlipHorizontal
+        
         cardLabel.text = card
+        
+        if adolfoMeans.count > 0 {
+            
+            var randomNumber = Int(arc4random_uniform(UInt32(adolfoMeans.count)))
+            
+            meansLabel.text = adolfoMeans[randomNumber]
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {
+        
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
