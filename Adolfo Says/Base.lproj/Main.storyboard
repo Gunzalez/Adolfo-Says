@@ -260,7 +260,7 @@
                             <outlet property="delegate" destination="6s9-0m-bwj" id="PR0-eP-YOp"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Adolfo Means" id="RNL-TU-juq">
+                    <navigationItem key="navigationItem" title="List" id="RNL-TU-juq">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="JVP-wI-gcc">
                             <connections>
                                 <segue destination="a8d-SN-JkD" kind="show" id="xuS-1k-2bJ"/>
@@ -289,16 +289,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oiw-MT-asH">
-                                <rect key="frame" x="16" y="86" width="343" height="30"/>
+                                <rect key="frame" x="16" y="272" width="343" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VL7-eC-SW2">
+                                <rect key="frame" x="23" y="132" width="336" height="103"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Preivew" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcg-4x-Fat">
+                                <rect key="frame" x="16" y="84" width="61" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="200" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSH-4t-jg6">
+                                <rect key="frame" x="330" y="84" width="29" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="qKI-Qg-f8v"/>
+                    <navigationItem key="navigationItem" title="Add" id="qKI-Qg-f8v"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="charCountLabel" destination="FSH-4t-jg6" id="59Q-pc-VYx"/>
+                        <outlet property="previewLabel" destination="VL7-eC-SW2" id="SHA-tv-Xid"/>
                         <outlet property="textField" destination="Oiw-MT-asH" id="BvS-Ed-csr"/>
                     </connections>
                 </viewController>

@@ -85,6 +85,15 @@ class ListTableViewController: UITableViewController {
             viewController.meaningToEdit = adolfoMeans[selectedIndex!.row]
             
             
+//            let backBtn = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
+//            navigationItem.leftBarButtonItem = backBtn
+//            navigationItem.leftBarButtonItem?.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "YourFontName", size: 20)!], forState: UIControlState.Normal)
+//            
+            
+            viewController.navigationItem.leftBarButtonItem?.title = "Dance"
+            
+            viewController.navigationItem.title = "Edit"
+            
         }
         
     }

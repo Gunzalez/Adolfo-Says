@@ -12,6 +12,10 @@ class AddViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet var textField: UITextField!
     
+    @IBOutlet var previewLabel: UILabel!
+    
+    @IBOutlet var charCountLabel: UILabel!
+    
     var meaningToEdit: String!
     
     override func viewDidLoad() {
@@ -38,7 +42,7 @@ class AddViewController: UIViewController, UITextFieldDelegate {
     
         self.navigationController?.popViewControllerAnimated(true)
         
-        println("Governor")
+        println("Not dismissing")
     }
 
     
