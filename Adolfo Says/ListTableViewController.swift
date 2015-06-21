@@ -62,9 +62,9 @@ class ListTableViewController: UITableViewController {
         
         if (editingStyle == UITableViewCellEditingStyle.Delete) {
             
-            //NSUserDefaults.standardUserDefaults().setObject(memorablePlaces, forKey: "memorablePlaces");
-            
             adolfoMeans.removeAtIndex(indexPath.row)
+            
+            NSUserDefaults.standardUserDefaults().setObject(adolfoMeans, forKey: "adolfoMeans");
             
             tableList.reloadData()
         }
@@ -90,7 +90,4 @@ class ListTableViewController: UITableViewController {
         
     }
     
-    
-
-
 }

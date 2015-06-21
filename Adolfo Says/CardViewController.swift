@@ -15,7 +15,6 @@ class CardViewController: UIViewController {
     @IBOutlet var cardLabel: UILabel!
     
     @IBOutlet var meansLabel: UILabel!
-    
 
     @IBAction func donePressed(sender: AnyObject) {
         

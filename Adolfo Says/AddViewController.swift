@@ -86,6 +86,8 @@ class AddViewController: UIViewController, UITextFieldDelegate {
                 
             }
             
+            NSUserDefaults.standardUserDefaults().setObject(adolfoMeans, forKey: "adolfoMeans");
+            
         }
     
     }

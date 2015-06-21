@@ -40,7 +40,12 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
         
-        if adolfoMeans.count < 1 {
+        
+        if NSUserDefaults.standardUserDefaults().objectForKey("adolfoMeans") != nil {
+            
+            adolfoMeans = NSUserDefaults.standardUserDefaults().objectForKey("adolfoMeans") as! [String];
+            
+        } else {
             
             adolfoMeans.append("I would rather be at home watching Game of Thrones")
             adolfoMeans.append("Actually, I have no idea but I just said that so I don't look stupid")
