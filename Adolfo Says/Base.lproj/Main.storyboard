@@ -251,7 +251,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="a8d-SN-JkD" kind="show" identifier="edit" id="pG5-Ig-cvG"/>
+                                    <segue destination="a8d-SN-JkD" kind="presentation" identifier="edit" id="pG5-Ig-cvG"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -260,10 +260,10 @@
                             <outlet property="delegate" destination="6s9-0m-bwj" id="PR0-eP-YOp"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="List" id="RNL-TU-juq">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="JVP-wI-gcc">
+                    <navigationItem key="navigationItem" title="Adolfo Means" id="RNL-TU-juq">
+                        <barButtonItem key="rightBarButtonItem" title="Add New" id="JVP-wI-gcc">
                             <connections>
-                                <segue destination="a8d-SN-JkD" kind="show" id="xuS-1k-2bJ"/>
+                                <segue destination="a8d-SN-JkD" kind="presentation" modalPresentationStyle="fullScreen" id="xuS-1k-2bJ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -308,7 +308,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="200" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSH-4t-jg6">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="90" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSH-4t-jg6">
                                 <rect key="frame" x="330" y="84" width="29" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -317,7 +317,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Add" id="qKI-Qg-f8v"/>
+                    <navigationItem key="navigationItem" title="New Meaning" id="qKI-Qg-f8v">
+                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="Omf-dk-KVf">
+                            <connections>
+                                <action selector="cancelPressed:" destination="LU4-v1-CwT" id="JeS-I9-YQO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="charCountLabel" destination="FSH-4t-jg6" id="59Q-pc-VYx"/>
@@ -404,6 +410,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="pG5-Ig-cvG"/>
+        <segue reference="xuS-1k-2bJ"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -16,7 +16,7 @@ class AddViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var charCountLabel: UILabel!
     
-    var maxChar: Int = 50
+    var maxChar: Int = 90
     
     var meaningIndex: Int!
     
@@ -43,6 +43,13 @@ class AddViewController: UIViewController, UITextFieldDelegate {
     }
     
     
+    @IBAction func cancelPressed(sender: AnyObject) {
+        
+        dismissScreen()
+        
+    }
+    
+    
     @IBAction func keyboardPressed(sender: AnyObject) {
         
         previewLabel.text = textField.text
@@ -61,24 +68,35 @@ class AddViewController: UIViewController, UITextFieldDelegate {
     }
     
     
-    func saveAndDismissView(){
+    func saveData(){
         
-        var newMeaning: String = textField.text
+        var newMeaning: String = textField.text!
         
-        if meaningIndex != nil {
+        var newString = newMeaning.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+        
+        if count(newString) > 1 {
             
-            adolfoMeans[meaningIndex] = newMeaning
-            
-        } else {
-            
-            adolfoMeans.append(newMeaning)
+            if meaningIndex != nil {
+                
+                adolfoMeans[meaningIndex] = newMeaning
+                
+            } else {
+                
+                adolfoMeans.append(newMeaning)
+                
+            }
             
         }
-        
     
-        self.navigationController?.popViewControllerAnimated(true)
+    }
+    
+    
+    func dismissScreen(){
         
-        println("Not dismissing")
+        textField.resignFirstResponder()
+        
+        self.dismissViewControllerAnimated(true, completion: {});
+    
     }
 
     
@@ -91,9 +109,9 @@ class AddViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         
-        textField.resignFirstResponder()
+        saveData();
         
-        saveAndDismissView();
+        dismissScreen()
         
         return true
     }

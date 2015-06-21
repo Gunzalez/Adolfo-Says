@@ -42,9 +42,11 @@ class ViewController: UIViewController {
         
         if adolfoMeans.count < 1 {
             
-            adolfoMeans.append("I would rather wathing True Detective")
+            adolfoMeans.append("I would rather be at home watching Game of Thrones")
             adolfoMeans.append("Actually, I have no idea but I just said that so I don't look stupid")
-            adolfoMeans.append("What, what did you say? Aww, fuck it, why not!")
+            adolfoMeans.append("Er, I wasn't actually listening but 8 is as good as any")
+            adolfoMeans.append("I've done this many times before, and this is an accurate estimate")
+            adolfoMeans.append("Where am I, what am I doing here, who are these people?")
             
         }
         

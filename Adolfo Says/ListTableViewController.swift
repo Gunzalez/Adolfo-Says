@@ -44,7 +44,7 @@ class ListTableViewController: UITableViewController {
         
         var adolfloMeans = adolfoMeans[indexPath.row]
         
-        cell.textLabel?.text = adolfloMeans;
+        cell.textLabel?.text = adolfloMeans
 
         return cell
         
@@ -84,15 +84,7 @@ class ListTableViewController: UITableViewController {
             
             viewController.meaningIndex = selectedIndex!.row
             
-            
-//            let backBtn = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
-//            navigationItem.leftBarButtonItem = backBtn
-//            navigationItem.leftBarButtonItem?.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "YourFontName", size: 20)!], forState: UIControlState.Normal)
-//            
-            
-            viewController.navigationItem.leftBarButtonItem?.title = "Dance"
-            
-            viewController.navigationItem.title = "Edit"
+            viewController.navigationItem.title = "Edit Meaning"
             
         }
         
