@@ -16,6 +16,26 @@ class ListTableViewController: UITableViewController {
         
         super.viewDidLoad()
         
+        var longPress = UILongPressGestureRecognizer(target: self, action: "action:")
+        
+        longPress.minimumPressDuration = 0.5
+        
+        tableList.addGestureRecognizer(longPress)
+    
+    }
+    
+    func action(gestureRecognizer:UIGestureRecognizer) {
+        
+        if ( gestureRecognizer.state == UIGestureRecognizerState.Began ){
+            
+            var touchPoint = gestureRecognizer.locationInView(self.tableList)
+            
+            var indexPath = tableList.indexPathForRowAtPoint(touchPoint)
+            
+            //println(indexPath!.row)
+            
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
