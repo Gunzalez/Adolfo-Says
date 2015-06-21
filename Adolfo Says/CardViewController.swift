@@ -30,13 +30,26 @@ class CardViewController: UIViewController {
         
         cardLabel.text = card
         
-        if adolfoMeans.count > 0 {
+        if fixedMeans != 0 {
             
-            var randomNumber = Int(arc4random_uniform(UInt32(adolfoMeans.count)))
+            meansLabel.text = adolfoMeans[fixedMeans]
             
-            meansLabel.text = adolfoMeans[randomNumber]
+        } else {
+            
+            
+            if adolfoMeans.count > 0 {
+            
+                var randomNumber = Int(arc4random_uniform(UInt32(adolfoMeans.count)))
+            
+                meansLabel.text = adolfoMeans[randomNumber]
+            
+            } else {
+                
+                meansLabel.text = "I really mean this!"
+            }
             
         }
+        
     }
 
     override func didReceiveMemoryWarning() {

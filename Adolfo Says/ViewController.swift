@@ -10,6 +10,8 @@ import UIKit
 
 var adolfoMeans = [String]()
 
+var fixedMeans: Int = 0
+
 class ViewController: UIViewController {
     
     var card: String!
@@ -33,13 +35,13 @@ class ViewController: UIViewController {
             var viewController = navController.topViewController as! CardViewController
             
             viewController.card = card
+            
         }
     }
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
         
         if NSUserDefaults.standardUserDefaults().objectForKey("adolfoMeans") != nil {
             
