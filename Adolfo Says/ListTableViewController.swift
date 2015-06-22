@@ -12,6 +12,8 @@ class ListTableViewController: UITableViewController {
 
     @IBOutlet var tableList: UITableView!
     
+    var meansArray = [String]()
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -21,6 +23,11 @@ class ListTableViewController: UITableViewController {
         longPress.minimumPressDuration = 0.5
         
         tableList.addGestureRecognizer(longPress)
+        
+        for (means, isFav) in adolfoMeans {
+            
+            meansArray.append(means)
+        }
     
     }
     
@@ -55,7 +62,7 @@ class ListTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return adolfoMeans.count
+        return meansArray.count
         
     }
     
@@ -64,9 +71,17 @@ class ListTableViewController: UITableViewController {
         
         var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
         
-        var adolfloMeans = adolfoMeans[indexPath.row]
+        cell.textLabel?.text = meansArray[indexPath.row]
         
-        cell.textLabel?.text = adolfloMeans
+        if adolfoMeans[meansArray[indexPath.row]] == true {
+            
+            cell.accessoryType = UITableViewCellAccessoryType.Checkmark
+            
+        } else {
+            
+            cell.accessoryType = UITableViewCellAccessoryType.None
+            
+        }
 
         return cell
         
@@ -84,11 +99,16 @@ class ListTableViewController: UITableViewController {
         
         if (editingStyle == UITableViewCellEditingStyle.Delete) {
             
-            adolfoMeans.removeAtIndex(indexPath.row)
+            var means = meansArray[indexPath.row]
+            
+            meansArray.removeAtIndex(indexPath.row)
+            
+            adolfoMeans[means] = nil
             
             NSUserDefaults.standardUserDefaults().setObject(adolfoMeans, forKey: "adolfoMeans");
             
             tableList.reloadData()
+            
         }
     }
     

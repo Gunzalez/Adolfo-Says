@@ -8,9 +8,7 @@
 
 import UIKit
 
-var adolfoMeans = [String]()
-
-var fixedMeans: Int = -1
+var adolfoMeans = [Dictionary<String, Bool>]()
 
 let defaultMeans = "I really feel this is the correct estimate"
 
@@ -45,17 +43,29 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
         
+        NSUserDefaults.standardUserDefaults().removeObjectForKey("adolfoMeans") // TODO REMOVE
+        
         if NSUserDefaults.standardUserDefaults().objectForKey("adolfoMeans") != nil {
             
-            adolfoMeans = NSUserDefaults.standardUserDefaults().objectForKey("adolfoMeans") as! [String];
+            adolfoMeans = NSUserDefaults.standardUserDefaults().objectForKey("adolfoMeans") as! [Dictionary<String, Bool>];
             
         } else {
             
-            adolfoMeans.append("I would rather be at home watching Game of Thrones")
-            adolfoMeans.append("Actually, I have no idea but I just said that so I don't look stupid")
-            adolfoMeans.append("Er, I wasn't actually listening but 8 is as good as any")
-            adolfoMeans.append("I've done this many times before, and this is an accurate estimate")
-            adolfoMeans.append("Where am I, what am I doing here, who are these people?")
+            var singleMeaning: Dictionary = [String: Bool]()
+            singleMeaning["I would rather be at home watching Game of Thrones"] = false
+            adolfoMeans.append(singleMeaning)
+            
+            singleMeaning["Actually, I have no idea but I just said that so I don't look stupid"] = false
+            adolfoMeans.append(singleMeaning)
+            
+            singleMeaning["Er, I wasn't actually listening but 8 is as good as any"] = false
+            adolfoMeans.append(singleMeaning)
+            
+            singleMeaning["I've done this many times before, and this is an accurate estimate"] = false
+            adolfoMeans.append(singleMeaning)
+            
+            singleMeaning["Where am I, what am I doing here, who are these people?"] = false
+            adolfoMeans.append(singleMeaning)
             
         }
         

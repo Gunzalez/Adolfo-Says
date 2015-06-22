@@ -11,6 +11,10 @@ import UIKit
 class CardViewController: UIViewController {
     
     var card :String!
+        
+    var meansArray = [String]()
+    
+    var favPicked = false
 
     @IBOutlet var cardLabel: UILabel!
     
@@ -32,13 +36,43 @@ class CardViewController: UIViewController {
         
         if adolfoMeans.count > 0 {
             
-            var randomNumber = Int(arc4random_uniform(UInt32(adolfoMeans.count)))
+            for singleMeaning in adolfoMeans {
+                
+                for (means, isFav) in singleMeaning {
+                    
+                    if isFav {
+                        
+                        meansLabel.text = means
+                        
+                        favPicked = true
+                    }
+                    
+                }
             
-            meansLabel.text = adolfoMeans[randomNumber]
+            }
+            
+            if !favPicked {
+                
+                for singleMeaning in adolfoMeans {
+                    
+                    for (means, isFav) in singleMeaning {
+                        
+                        meansArray.append(means)
+                        
+                    }
+                    
+                }
+                
+                var randomNumber = Int(arc4random_uniform(UInt32(meansArray.count)))
+                
+                meansLabel.text = meansArray[randomNumber]
+                
+            }
             
         } else {
-                
+            
             meansLabel.text = defaultMeans
+            
         }
         
     }

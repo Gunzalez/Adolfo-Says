@@ -82,7 +82,7 @@ class AddViewController: UIViewController, UITextFieldDelegate {
                 
             } else {
                 
-                adolfoMeans.append(newMeaning)
+                adolfoMeans[newMeaning] = false
                 
             }
             
