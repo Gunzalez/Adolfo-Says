@@ -30,24 +30,15 @@ class CardViewController: UIViewController {
         
         cardLabel.text = card
         
-        if fixedMeans != 0 {
+        if adolfoMeans.count > 0 {
             
-            meansLabel.text = adolfoMeans[fixedMeans]
+            var randomNumber = Int(arc4random_uniform(UInt32(adolfoMeans.count)))
+            
+            meansLabel.text = adolfoMeans[randomNumber]
             
         } else {
-            
-            
-            if adolfoMeans.count > 0 {
-            
-                var randomNumber = Int(arc4random_uniform(UInt32(adolfoMeans.count)))
-            
-                meansLabel.text = adolfoMeans[randomNumber]
-            
-            } else {
                 
-                meansLabel.text = "I really mean this!"
-            }
-            
+            meansLabel.text = defaultMeans
         }
         
     }

@@ -10,7 +10,9 @@ import UIKit
 
 var adolfoMeans = [String]()
 
-var fixedMeans: Int = 0
+var fixedMeans: Int = -1
+
+let defaultMeans = "I really feel this is the correct estimate"
 
 class ViewController: UIViewController {
     

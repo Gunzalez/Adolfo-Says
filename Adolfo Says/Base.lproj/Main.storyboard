@@ -267,7 +267,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Adolfo Means" id="RNL-TU-juq">
-                        <barButtonItem key="rightBarButtonItem" title="Add New" id="JVP-wI-gcc">
+                        <barButtonItem key="rightBarButtonItem" title="New" id="JVP-wI-gcc">
                             <connections>
                                 <segue destination="a8d-SN-JkD" kind="presentation" modalPresentationStyle="fullScreen" id="xuS-1k-2bJ"/>
                             </connections>

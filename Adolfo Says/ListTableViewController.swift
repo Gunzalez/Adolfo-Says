@@ -32,11 +32,9 @@ class ListTableViewController: UITableViewController {
             
             var indexPath = tableList.indexPathForRowAtPoint(touchPoint)
             
-            var cell = tableList.cellForRowAtIndexPath(indexPath!)
+            println(indexPath!.row)
             
-            cell!.accessoryType = UITableViewCellAccessoryType.Checkmark
-            
-            fixedMeans = indexPath!.row
+            tableList.reloadData()
 
         }
         
