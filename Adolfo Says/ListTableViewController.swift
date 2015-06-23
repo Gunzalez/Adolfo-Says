@@ -12,8 +12,6 @@ class ListTableViewController: UITableViewController {
 
     @IBOutlet var tableList: UITableView!
     
-    var meansArray = [String]()
-    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -23,11 +21,6 @@ class ListTableViewController: UITableViewController {
         longPress.minimumPressDuration = 0.5
         
         tableList.addGestureRecognizer(longPress)
-        
-        for (means, isFav) in adolfoMeans {
-            
-            meansArray.append(means)
-        }
     
     }
     
@@ -62,7 +55,7 @@ class ListTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return meansArray.count
+        return adolfoMeans.count
         
     }
     
@@ -71,9 +64,9 @@ class ListTableViewController: UITableViewController {
         
         var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
         
-        cell.textLabel?.text = meansArray[indexPath.row]
+        cell.textLabel?.text = adolfoMeans[indexPath.row][0]
         
-        if adolfoMeans[meansArray[indexPath.row]] == true {
+        if adolfoMeans[indexPath.row][1] == "yes" {
             
             cell.accessoryType = UITableViewCellAccessoryType.Checkmark
             
@@ -90,6 +83,8 @@ class ListTableViewController: UITableViewController {
     
     override func viewDidAppear(animated: Bool) {
         
+        println()
+        
         tableList.reloadData()
         
     }
@@ -99,11 +94,7 @@ class ListTableViewController: UITableViewController {
         
         if (editingStyle == UITableViewCellEditingStyle.Delete) {
             
-            var means = meansArray[indexPath.row]
-            
-            meansArray.removeAtIndex(indexPath.row)
-            
-            adolfoMeans[means] = nil
+            adolfoMeans.removeAtIndex(indexPath.row)
             
             NSUserDefaults.standardUserDefaults().setObject(adolfoMeans, forKey: "adolfoMeans");
             

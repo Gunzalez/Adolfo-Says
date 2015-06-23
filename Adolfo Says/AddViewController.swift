@@ -20,6 +20,8 @@ class AddViewController: UIViewController, UITextFieldDelegate {
     
     var meaningIndex: Int!
     
+    var meansArray = [String]()
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -29,14 +31,16 @@ class AddViewController: UIViewController, UITextFieldDelegate {
         textField.becomeFirstResponder()
         
         charCountLabel.text = String(maxChar)
-        
+    
         if meaningIndex != nil {
+            
+            var textToShow = adolfoMeans[meaningIndex][0]
         
-            textField.text = adolfoMeans[meaningIndex]
+            textField.text = textToShow
             
-            previewLabel.text = adolfoMeans[meaningIndex]
+            previewLabel.text = textToShow
             
-            charCountLabel.text = String(maxChar - count(adolfoMeans[meaningIndex]))
+            charCountLabel.text = String(maxChar - count(textToShow))
             
         }
         
@@ -76,13 +80,19 @@ class AddViewController: UIViewController, UITextFieldDelegate {
         
         if count(newString) > 1 {
             
+            var singleMeaning: Array = [String]()
+            
+            singleMeaning.append(newString)
+            
+            singleMeaning.append("no")
+            
             if meaningIndex != nil {
                 
-                adolfoMeans[meaningIndex] = newMeaning
+                adolfoMeans[meaningIndex] = singleMeaning
                 
             } else {
                 
-                adolfoMeans[newMeaning] = false
+                adolfoMeans.append(singleMeaning)
                 
             }
             

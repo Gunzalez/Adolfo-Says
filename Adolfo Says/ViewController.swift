@@ -8,7 +8,7 @@
 
 import UIKit
 
-var adolfoMeans = [Dictionary<String, Bool>]()
+var adolfoMeans = [Array<String>]()
 
 let defaultMeans = "I really feel this is the correct estimate"
 
@@ -47,29 +47,39 @@ class ViewController: UIViewController {
         
         if NSUserDefaults.standardUserDefaults().objectForKey("adolfoMeans") != nil {
             
-            adolfoMeans = NSUserDefaults.standardUserDefaults().objectForKey("adolfoMeans") as! [Dictionary<String, Bool>];
+            adolfoMeans = NSUserDefaults.standardUserDefaults().objectForKey("adolfoMeans") as! [Array<String>];
             
         } else {
             
-            var singleMeaning: Dictionary = [String: Bool]()
-            singleMeaning["I would rather be at home watching Game of Thrones"] = false
-            adolfoMeans.append(singleMeaning)
+            var newMeaning = [String]()
+            newMeaning.append("I would rather be at home watching Game of Thrones")
+            newMeaning.append("no")
+            adolfoMeans.append(newMeaning)
             
-            singleMeaning["Actually, I have no idea but I just said that so I don't look stupid"] = false
-            adolfoMeans.append(singleMeaning)
+            newMeaning.removeAll()
+            newMeaning.append("Actually, I have no idea but I just said that so I don't look stupid")
+            newMeaning.append("no")
+            adolfoMeans.append(newMeaning)
             
-            singleMeaning["Er, I wasn't actually listening but 8 is as good as any"] = false
-            adolfoMeans.append(singleMeaning)
+            newMeaning.removeAll()
+            newMeaning.append("Er, I wasn't actually listening but 8 is as good as any")
+            newMeaning.append("no")
+            adolfoMeans.append(newMeaning)
             
-            singleMeaning["I've done this many times before, and this is an accurate estimate"] = false
-            adolfoMeans.append(singleMeaning)
+            newMeaning.removeAll()
+            newMeaning.append("I've done this many times before, and this is an accurate estimate")
+            newMeaning.append("no")
+            adolfoMeans.append(newMeaning)
             
-            singleMeaning["Where am I, what am I doing here, who are these people?"] = false
-            adolfoMeans.append(singleMeaning)
+            newMeaning.removeAll()
+            newMeaning.append("Where am I, what am I doing here, who are these people?")
+            newMeaning.append("no")
+            adolfoMeans.append(newMeaning)
             
         }
         
     }
+    
 
     override func didReceiveMemoryWarning() {
         
