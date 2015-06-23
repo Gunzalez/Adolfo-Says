@@ -32,29 +32,33 @@ class ListTableViewController: UITableViewController {
             
             var indexPath = tableList.indexPathForRowAtPoint(touchPoint)
             
-            for var index:Int=0; index < adolfoMeans.count; index++ {
+            if indexPath != nil {
                 
-                if index != indexPath!.row {
+                for var index:Int=0; index < adolfoMeans.count; index++ {
                     
-                   adolfoMeans[index][1] = "no"
+                    if index != indexPath!.row {
+                        
+                        adolfoMeans[index][1] = "no"
+                        
+                    }
                     
                 }
-        
+                
+                if adolfoMeans[indexPath!.row][1] == "yes" {
+                    
+                    adolfoMeans[indexPath!.row][1] = "no"
+                    
+                } else {
+                    
+                    adolfoMeans[indexPath!.row][1] = "yes"
+                    
+                }
+                
+                NSUserDefaults.standardUserDefaults().setObject(adolfoMeans, forKey: "adolfoMeans");
+                
+                tableList.reloadData()
+                
             }
-            
-            if adolfoMeans[indexPath!.row][1] == "yes" {
-                
-                adolfoMeans[indexPath!.row][1] = "no"
-                
-            } else {
-                
-                adolfoMeans[indexPath!.row][1] = "yes"
-                
-            }
-            
-            NSUserDefaults.standardUserDefaults().setObject(adolfoMeans, forKey: "adolfoMeans");
-            
-            tableList.reloadData()
 
         }
         
