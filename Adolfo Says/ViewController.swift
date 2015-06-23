@@ -43,7 +43,7 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
         
-        NSUserDefaults.standardUserDefaults().removeObjectForKey("adolfoMeans") // TODO REMOVE
+        //NSUserDefaults.standardUserDefaults().removeObjectForKey("adolfoMeans") // TODO REMOVE
         
         if NSUserDefaults.standardUserDefaults().objectForKey("adolfoMeans") != nil {
             

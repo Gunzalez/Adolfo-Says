@@ -20,8 +20,6 @@ class AddViewController: UIViewController, UITextFieldDelegate {
     
     var meaningIndex: Int!
     
-    var meansArray = [String]()
-    
     override func viewDidLoad() {
         
         super.viewDidLoad()

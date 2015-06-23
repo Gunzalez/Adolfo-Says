@@ -32,7 +32,27 @@ class ListTableViewController: UITableViewController {
             
             var indexPath = tableList.indexPathForRowAtPoint(touchPoint)
             
-            println(indexPath!.row)
+            for var index:Int=0; index < adolfoMeans.count; index++ {
+                
+                if index != indexPath!.row {
+                    
+                   adolfoMeans[index][1] = "no"
+                    
+                }
+        
+            }
+            
+            if adolfoMeans[indexPath!.row][1] == "yes" {
+                
+                adolfoMeans[indexPath!.row][1] = "no"
+                
+            } else {
+                
+                adolfoMeans[indexPath!.row][1] = "yes"
+                
+            }
+            
+            NSUserDefaults.standardUserDefaults().setObject(adolfoMeans, forKey: "adolfoMeans");
             
             tableList.reloadData()
 
@@ -82,8 +102,6 @@ class ListTableViewController: UITableViewController {
 
     
     override func viewDidAppear(animated: Bool) {
-        
-        println()
         
         tableList.reloadData()
         

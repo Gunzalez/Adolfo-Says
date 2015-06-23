@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>303E8765-8C66-43F4-80F0-D85E06BB65F3</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Adolfo Says</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>7978E78E36A3F2E37B8E2304DBBDDC840B5F44B9</key>
 		<string>https://github.com/Gunzalez/Adolfo-Says.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Adolfo Says.xcodeproj</string>
+	<string>Adolfo Says.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>7978E78E36A3F2E37B8E2304DBBDDC840B5F44B9</key>
