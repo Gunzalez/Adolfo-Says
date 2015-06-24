@@ -15,11 +15,13 @@ class MyCustomButton: UIButton {
         
         super.init(coder: aDecoder)
         
-        self.layer.cornerRadius = 5.0;
-        self.layer.borderColor = UIColor.whiteColor().CGColor
-        self.layer.borderWidth = 1.0
-        self.backgroundColor = UIColorFromRGB(0x8B4513)
-        self.tintColor = UIColor.whiteColor()
+        self.layer.cornerRadius = 4.0;
+        self.layer.borderColor = UIColor.blackColor().CGColor
+        self.layer.borderWidth = 0.5
+        //self.backgroundColor = UIColorFromRGB(0x8B4513)
+        self.backgroundColor = UIColor.whiteColor()
+        self.layer.opacity = 0.3
+        self.tintColor = UIColor.blackColor()
         
     }
     
@@ -29,7 +31,7 @@ class MyCustomButton: UIButton {
             red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
             green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
             blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
-            alpha: CGFloat(1.0)
+            alpha: CGFloat(0.6)
         )
         
     }
