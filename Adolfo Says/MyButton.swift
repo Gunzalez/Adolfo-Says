@@ -17,7 +17,7 @@ class MyCustomButton: UIButton {
         
         self.layer.cornerRadius = 4.0;
         self.layer.borderColor = UIColor.lightGrayColor().CGColor
-        self.layer.borderWidth = 0.5
+        self.layer.borderWidth = 0.2
         //self.backgroundColor = UIColorFromRGB(0x8B4513)
         self.backgroundColor = UIColor.whiteColor()
         //self.layer.opacity = 0.3
