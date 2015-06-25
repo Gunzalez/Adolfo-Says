@@ -82,13 +82,16 @@ class AddViewController: UIViewController, UITextFieldDelegate {
             
             singleMeaning.append(newString)
             
-            singleMeaning.append("no")
-            
             if meaningIndex != nil {
+                
+                singleMeaning.append(adolfoMeans[meaningIndex][1])
                 
                 adolfoMeans[meaningIndex] = singleMeaning
                 
             } else {
+                
+                
+                singleMeaning.append("no")
                 
                 adolfoMeans.append(singleMeaning)
                 

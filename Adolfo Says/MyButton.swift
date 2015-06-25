@@ -16,11 +16,11 @@ class MyCustomButton: UIButton {
         super.init(coder: aDecoder)
         
         self.layer.cornerRadius = 4.0;
-        self.layer.borderColor = UIColor.blackColor().CGColor
+        self.layer.borderColor = UIColor.lightGrayColor().CGColor
         self.layer.borderWidth = 0.5
         //self.backgroundColor = UIColorFromRGB(0x8B4513)
         self.backgroundColor = UIColor.whiteColor()
-        self.layer.opacity = 0.3
+        //self.layer.opacity = 0.3
         self.tintColor = UIColor.blackColor()
         
     }
