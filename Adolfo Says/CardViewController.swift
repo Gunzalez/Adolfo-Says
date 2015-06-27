@@ -12,11 +12,34 @@ class CardViewController: UIViewController {
     
     var card: String!
     
-    var favPicked = false
+    var hideOverride = "Ben Howard is singing, nice cool songs, wish I could play guitar."
+    
+    var tempMeaning: String!
 
     @IBOutlet var cardLabel: UILabel!
     
     @IBOutlet var meansLabel: UILabel!
+    
+    @IBOutlet var hideButton: UIBarButtonItem!
+    
+    @IBAction func hideButtonPressed(sender: AnyObject) {
+        
+        if hideButton.title == "Hide" {
+            
+            meansLabel.text = hideOverride
+            
+            hideButton.title = "Show"
+            
+            
+        } else {
+            
+            meansLabel.text = tempMeaning
+            
+            hideButton.title = "Hide"
+            
+        }
+        
+    }
 
     @IBAction func donePressed(sender: AnyObject) {
         
@@ -46,7 +69,7 @@ class CardViewController: UIViewController {
             
             }
             
-            if favourites.count < 1 {
+            if favourites.isEmpty {
                 
                 favourites = adolfoMeans
                 
@@ -55,6 +78,8 @@ class CardViewController: UIViewController {
             var randomNumber = Int(arc4random_uniform(UInt32(favourites.count)))
                 
             meansLabel.text = favourites[randomNumber][0]
+            
+            tempMeaning = favourites[randomNumber][0]
                 
             
         } else {

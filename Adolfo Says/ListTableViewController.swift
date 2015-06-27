@@ -28,6 +28,10 @@ class ListTableViewController: UITableViewController {
             
             self.newBarButton.enabled = false
             
+        } else {
+            
+            self.newBarButton.enabled = true
+            
         }
     
     }
@@ -41,16 +45,6 @@ class ListTableViewController: UITableViewController {
             var indexPath = tableList.indexPathForRowAtPoint(touchPoint)
             
             if indexPath != nil {
-                
-//                for var index:Int=0; index < adolfoMeans.count; index++ {
-//                    
-//                    if index != indexPath!.row {
-//                        
-//                        adolfoMeans[index][1] = "no"
-//                        
-//                    }
-//                    
-//                }
                 
                 if adolfoMeans[indexPath!.row][1] == "yes" {
                     
@@ -119,6 +113,10 @@ class ListTableViewController: UITableViewController {
             
             self.newBarButton.enabled = false
             
+        } else {
+            
+            self.newBarButton.enabled = true
+            
         }
         
         tableList.reloadData()
@@ -148,7 +146,6 @@ class ListTableViewController: UITableViewController {
             
         }
     }
-    
     
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
