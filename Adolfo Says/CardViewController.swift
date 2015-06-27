@@ -32,27 +32,30 @@ class CardViewController: UIViewController {
         
         cardLabel.text = card
         
+        var favourites = [Array<String>]()
+        
         if adolfoMeans.count > 0 {
             
             for singleMeaning in adolfoMeans {
                 
                 if singleMeaning[1] == "yes" {
                     
-                    meansLabel.text = singleMeaning[0] as String
-                    
-                    favPicked = true
+                    favourites.append(singleMeaning)
                     
                 }
             
             }
             
-            if !favPicked {
+            if favourites.count < 1 {
                 
-                var randomNumber = Int(arc4random_uniform(UInt32(adolfoMeans.count)))
-                
-                meansLabel.text = adolfoMeans[randomNumber][0]
+                favourites = adolfoMeans
                 
             }
+            
+            var randomNumber = Int(arc4random_uniform(UInt32(favourites.count)))
+                
+            meansLabel.text = favourites[randomNumber][0]
+                
             
         } else {
             

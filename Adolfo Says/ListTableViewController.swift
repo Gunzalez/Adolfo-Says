@@ -42,15 +42,15 @@ class ListTableViewController: UITableViewController {
             
             if indexPath != nil {
                 
-                for var index:Int=0; index < adolfoMeans.count; index++ {
-                    
-                    if index != indexPath!.row {
-                        
-                        adolfoMeans[index][1] = "no"
-                        
-                    }
-                    
-                }
+//                for var index:Int=0; index < adolfoMeans.count; index++ {
+//                    
+//                    if index != indexPath!.row {
+//                        
+//                        adolfoMeans[index][1] = "no"
+//                        
+//                    }
+//                    
+//                }
                 
                 if adolfoMeans[indexPath!.row][1] == "yes" {
                     
