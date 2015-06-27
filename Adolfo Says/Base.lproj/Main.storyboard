@@ -227,6 +227,7 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="newBarButton" destination="JVP-wI-gcc" id="j0Q-zd-sDV"/>
                         <outlet property="tableList" destination="Es7-8g-QSa" id="1Or-zb-MZZ"/>
                     </connections>
                 </tableViewController>

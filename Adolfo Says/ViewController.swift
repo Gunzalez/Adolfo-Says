@@ -12,6 +12,8 @@ var adolfoMeans = [Array<String>]()
 
 let defaultMeans = "I really feel this is the correct estimate"
 
+let maxMeaning: Int = 20
+
 class ViewController: UIViewController {
     
     var card: String!

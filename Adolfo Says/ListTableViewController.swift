@@ -12,6 +12,8 @@ class ListTableViewController: UITableViewController {
 
     @IBOutlet var tableList: UITableView!
     
+    @IBOutlet var newBarButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -21,6 +23,12 @@ class ListTableViewController: UITableViewController {
         longPress.minimumPressDuration = 0.5
         
         tableList.addGestureRecognizer(longPress)
+        
+        if adolfoMeans.count >= maxMeaning {
+            
+            self.newBarButton.enabled = false
+            
+        }
     
     }
     
@@ -107,6 +115,12 @@ class ListTableViewController: UITableViewController {
     
     override func viewDidAppear(animated: Bool) {
         
+        if adolfoMeans.count >= maxMeaning {
+            
+            self.newBarButton.enabled = false
+            
+        }
+        
         tableList.reloadData()
         
     }
@@ -119,6 +133,16 @@ class ListTableViewController: UITableViewController {
             adolfoMeans.removeAtIndex(indexPath.row)
             
             NSUserDefaults.standardUserDefaults().setObject(adolfoMeans, forKey: "adolfoMeans");
+            
+            if adolfoMeans.count >= maxMeaning {
+                
+                self.newBarButton.enabled = false
+                
+            } else {
+                
+                self.newBarButton.enabled = true
+                
+            }
             
             tableList.reloadData()
             
