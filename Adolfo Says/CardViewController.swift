@@ -26,14 +26,14 @@ class CardViewController: UIViewController {
         
         if hideButton.title == "Hide" {
             
-            meansLabel.text = hideOverride
+            meansLabel.text = replaceStoryPoints(hideOverride)
             
             hideButton.title = "Show"
             
             
         } else {
             
-            meansLabel.text = tempMeaning
+            meansLabel.text = replaceStoryPoints(tempMeaning)
             
             hideButton.title = "Hide"
             
@@ -46,6 +46,17 @@ class CardViewController: UIViewController {
         self.dismissViewControllerAnimated(true, completion: {});
         
     }
+    
+    
+    func replaceStoryPoints(meaning: String) -> String {
+        
+        var theCard = " " + card + " "
+        
+        var newString = meaning.stringByReplacingOccurrencesOfString(" # ", withString: theCard)
+        
+        return newString
+    }
+    
     
     override func viewDidLoad() {
         
@@ -77,14 +88,14 @@ class CardViewController: UIViewController {
             
             var randomNumber = Int(arc4random_uniform(UInt32(favourites.count)))
                 
-            meansLabel.text = favourites[randomNumber][0]
+            meansLabel.text = replaceStoryPoints(favourites[randomNumber][0])
             
             tempMeaning = favourites[randomNumber][0]
                 
             
         } else {
             
-            meansLabel.text = defaultMeans
+            meansLabel.text = replaceStoryPoints(defaultMeans)
             
         }
         
